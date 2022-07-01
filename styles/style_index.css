@@ -139,7 +139,70 @@ body {
   cursor: pointer;
   opacity: 1;
   transition: 0.3s;
-  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px rgb(255, 121, 218), 3px 3px 20px 0px rgb(255, 121, 218), 3px 3px 40px 0px rgb(255, 121, 218), 3px 3px 60px 0px rgb(255, 121, 218);
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356DC, 3px 3px 15px 0px #9356DC, 3px 3px 20px 0px #9356DC;
+}
+
+.process__container {
+  padding: 25px 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.process {
+  width: 95%;
+  max-width: 1200px;
+  background-color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.process__title {
+  margin: 0;
+}
+.process__step {
+  display: flex;
+  align-items: center;
+  background: #f6f6f6;
+  height: auto;
+  width: auto;
+  margin: 10px 20px;
+  font-weight: 500;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.process__step:hover {
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356DC, 3px 3px 15px 0px #9356DC, 3px 3px 20px 0px #9356DC;
+  background: rgba(146, 86, 220, 0.15);
+}
+.process__step:hover > .process__icon {
+  color: #9356DC;
+}
+.process__number {
+  background-color: #9356DC;
+  color: white;
+  position: absolute;
+  padding: 3px 8px 3px 8px;
+  border-radius: 500px;
+  transform: translateX(-50%);
+}
+.process__icon {
+  color: #7E7E7E;
+  margin: 0 20px;
+}
+.process__steps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 @-webkit-keyframes animateBg {

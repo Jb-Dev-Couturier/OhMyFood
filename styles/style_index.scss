@@ -10,10 +10,9 @@
     opacity: 1;
     transition: .3s;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,1),
-                3px 3px 10px 0px rgb(255, 121, 218, 1), 
-                3px 3px 20px 0px rgb(255, 121, 218, 1), 
-                3px 3px 40px 0px rgb(255, 121, 218, 1), 
-                3px 3px 60px 0px rgb(255, 121, 218, 1);    
+                3px 3px 10px 0px $color-primary, 
+                3px 3px 15px 0px $color-primary, 
+                3px 3px 20px 0px $color-primary;     
 }
 
 @mixin button-style {
@@ -164,6 +163,64 @@ body {
     }
 }
 
+// Process //
+
+
+.process__container {
+    padding: 25px 0;
+    width: 100%;
+    background: white;
+    @include flexbox-center;
+    flex-direction: column;
+}
+.process {
+    width: 95%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 0 ;   
+    display: flex;
+    flex-direction: column ;
+    &__title {
+        margin: 0;
+    }
+    &__step {
+        display: flex;
+        align-items: center;
+        background: #f6f6f6;
+        height: auto;
+        width: auto;
+        margin: 10px 20px;
+        font-weight: 500;
+        border-radius: 20px;
+        position: relative;
+        transition: .3s;
+        box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+        &:hover {
+            @include button-hover;
+            background: rgba(146, 86, 220, 0.15);
+            & > .process__icon{
+                color: $color-primary;
+            }
+        }
+    }
+        &__number {
+                background-color: $color-primary;
+                color: white;
+                position: absolute;
+                padding: 3px 8px 3px 8px;
+                border-radius: 500px;
+                transform: translateX(-50%);
+            }
+        &__icon {
+            color: #7E7E7E;
+            margin: 0 20px;
+        }
+    &__steps {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 // Animation Loading spinner //
 
 @keyframes animateBg
