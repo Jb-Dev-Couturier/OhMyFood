@@ -94,13 +94,13 @@ body {
             width: 15px;
             height: 15px;
             border-radius: 50%;
-            background: #9356DC;
-            box-shadow: 0 0 10px #9356DC,
-                        0 0 20px #9356DC,
-                        0 0 40px #9356DC,
-                        0 0 60px #9356DC,
-                        0 0 80px #9356DC,
-                        0 0 100px #9356DC;
+            background: $color-primary;
+            box-shadow: 0 0 10px $color-primary,
+                        0 0 20px $color-primary,
+                        0 0 40px $color-primary,
+                        0 0 60px $color-primary,
+                        0 0 80px $color-primary,
+                        0 0 100px $color-primary;
             animation: animate 1s linear;
             animation-delay: calc(0.1s * var(--i));
             visibility: hidden;
@@ -342,9 +342,68 @@ body {
         }
     }
 }
-.restaurant__card:hover .restaurant__block-name {
+.restaurant__card:hover .restaurant__block-name 
+{
     color: $color-primary;
-  }
+}
+
+// Footers//
+.footer {
+    width: 100%;
+    background-color: #353535;
+    padding-bottom: 50px;
+    @include flexbox-center;
+    &__bloc {
+        display: inline;
+        padding: 0 40px;
+        width: 100%;
+        max-width: 1200px;
+        & .logo {
+            font-family: 'Shrikhand', cursive;
+            color: white;
+            font-size: 18px;
+            padding: 15px 0;
+        }
+        &-links {
+            display: inline-flex;
+            flex-direction: column;
+            width: auto;
+        }
+        &-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            text-align: center;
+            color: white;
+            height: 30px;
+            
+            cursor: pointer;
+            &:hover .footer__bloc-link__title {
+                color: $color-primary;
+                transform: translateX(10px);
+            }
+            &:hover .footer__bloc-link__title a{
+                color: $color-primary;
+            }
+            & i {
+             margin-right: 10px;
+             transition: .5s;
+            }
+            &:hover i{
+                color: $color-primary;
+                animation:bounce-in-bck 1s linear ;
+                transform: scale(1);
+            }
+            &__title {
+                font-size: 16px;
+                font-weight: 400;
+                transition: .3s;   
+            }
+        }
+    }
+}
+
 // Animation Loading spinner //
 
 @keyframes animateBg
@@ -646,6 +705,24 @@ body {
         justify-content: center;
         flex-direction: row;
         width: 100%;
+    }
+    .footer {
+        &__bloc {
+            margin-bottom: 15px;
+            @include flexbox-center;
+            flex-direction: column;
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                max-width: 900px;
+                width: 100%;
+            }
+            & .logo {
+                text-align: center;
+            }
+        }
     }
 
 }
