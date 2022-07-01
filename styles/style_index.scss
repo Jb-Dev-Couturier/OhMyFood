@@ -253,7 +253,7 @@ body {
         align-items: flex-end;
         width: 100%;
         border-radius: 20px;
-        transform: scale(1.0);
+        transition: 1s;
         box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
         overflow: hidden;
         &-new {
@@ -307,7 +307,7 @@ body {
             color: black;
             margin-left: 20px;
             & > :first-child {
-                font-weight: 700;
+                font-weight: 800;
             }
         }
         &-hearth {
@@ -342,6 +342,9 @@ body {
         }
     }
 }
+.restaurant__card:hover .restaurant__block-name {
+    color: $color-primary;
+  }
 // Animation Loading spinner //
 
 @keyframes animateBg

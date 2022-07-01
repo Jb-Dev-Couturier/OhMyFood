@@ -238,7 +238,7 @@ body {
   align-items: flex-end;
   width: 100%;
   border-radius: 20px;
-  transform: scale(1);
+  transition: 1s;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 }
@@ -296,7 +296,7 @@ body {
   margin-left: 20px;
 }
 .restaurant__block-info > :first-child {
-  font-weight: 700;
+  font-weight: 800;
 }
 .restaurant__block-hearth {
   display: flex;
@@ -330,6 +330,10 @@ body {
   transition: 1.5s;
   -webkit-animation: heartbeat 1s linear infinite;
           animation: heartbeat 1s linear infinite;
+}
+
+.restaurant__card:hover .restaurant__block-name {
+  color: #9356DC;
 }
 
 @-webkit-keyframes animateBg {
