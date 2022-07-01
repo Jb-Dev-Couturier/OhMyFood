@@ -14,7 +14,6 @@
                 3px 3px 20px 0px rgb(255, 121, 218, 1), 
                 3px 3px 40px 0px rgb(255, 121, 218, 1), 
                 3px 3px 60px 0px rgb(255, 121, 218, 1);    
-    animation: vibrate-1 1s linear infinite;
 }
 
 @mixin button-style {
@@ -150,9 +149,12 @@ body {
         text-align: center;
         max-width: 250px;
         margin: 0;
+        
     }
     &__text {
         text-align: center;
+        padding: 5px 40px 20px 40px;
+        letter-spacing: 1px;
     }
     &__button {
         @include button-style;
@@ -208,55 +210,3 @@ body {
         transform: translateY(-400px);
     }
 }
-@-webkit-keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
-  @keyframes vibrate-1 {
-    0% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-    20% {
-      -webkit-transform: translate(-2px, 2px);
-              transform: translate(-2px, 2px);
-    }
-    40% {
-      -webkit-transform: translate(-2px, -2px);
-              transform: translate(-2px, -2px);
-    }
-    60% {
-      -webkit-transform: translate(2px, 2px);
-              transform: translate(2px, 2px);
-    }
-    80% {
-      -webkit-transform: translate(2px, -2px);
-              transform: translate(2px, -2px);
-    }
-    100% {
-      -webkit-transform: translate(0);
-              transform: translate(0);
-    }
-  }
