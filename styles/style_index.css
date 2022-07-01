@@ -205,11 +205,6 @@ body {
   flex-direction: column;
 }
 
-.process__step:hover .process__number {
-  -webkit-animation: bounce-in-bck 0.8s linear;
-  animation: bounce-in-bck 0.8s linear;
-}
-
 .restaurants {
   margin: 0;
   background: #f6f6f6;
