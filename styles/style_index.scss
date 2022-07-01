@@ -28,6 +28,10 @@ body {
     flex-direction: column;
 }
 
+
+// Loader //
+
+
 .sectionl{
     height: 100%;
     background: rgb(255, 255, 255);
@@ -81,7 +85,7 @@ body {
         }
     }
 }
-
+// Header //
 .header {
     box-shadow: 0px 5px 6px rgba(0,0,0,0.4);
     position: relative;
@@ -92,6 +96,18 @@ body {
         width: 200px;
     }
 }
+
+// location //
+.location {
+    @include flexbox-center();
+    background: #f3f3f3;
+    color: #363636;
+
+    &__ville {
+        margin-left: 20px;
+        font-weight: 500;
+    }
+} 
 
 
 // Animation Loading spinner //

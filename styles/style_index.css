@@ -89,6 +89,18 @@ body {
   width: 200px;
 }
 
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+  color: #363636;
+}
+.location__ville {
+  margin-left: 20px;
+  font-weight: 500;
+}
+
 @-webkit-keyframes animateBg {
   0% {
     filter: hue-rotate(0deg);
