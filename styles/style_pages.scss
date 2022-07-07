@@ -386,11 +386,18 @@ header {
         .footer {
             &__bloc {
                 margin-bottom: 15px;
+                @include flexbox-center;
+                flex-direction: column;
                 &-links {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
                     flex-direction: row;
                     max-width: 900px;
+                    width: 100%;
+                }
+                & .logo {
+                    text-align: center;
                 }
             }
         }
