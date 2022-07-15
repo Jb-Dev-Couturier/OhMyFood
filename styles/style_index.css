@@ -67,8 +67,8 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background: #9356DC;
-  box-shadow: 0 0 10px #9356DC, 0 0 20px #9356DC, 0 0 40px #9356DC, 0 0 60px #9356DC, 0 0 80px #9356DC, 0 0 100px #9356DC;
+  background: #9356dc;
+  box-shadow: 0 0 10px #9356dc, 0 0 20px #9356dc, 0 0 40px #9356dc, 0 0 60px #9356dc, 0 0 80px #9356dc, 0 0 100px #9356dc;
   -webkit-animation: animate 1s linear;
           animation: animate 1s linear;
   -webkit-animation-delay: calc(0.1s * var(--i));
@@ -139,7 +139,7 @@ body {
   cursor: pointer;
   opacity: 1;
   transition: 0.3s;
-  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356DC, 3px 3px 15px 0px #9356DC, 3px 3px 20px 0px #9356DC;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356dc, 3px 3px 15px 0px #9356dc, 3px 3px 20px 0px #9356dc;
 }
 
 .process__container {
@@ -181,14 +181,14 @@ body {
   cursor: pointer;
   opacity: 1;
   transition: 0.3s;
-  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356DC, 3px 3px 15px 0px #9356DC, 3px 3px 20px 0px #9356DC;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356dc, 3px 3px 15px 0px #9356dc, 3px 3px 20px 0px #9356dc;
   background: rgba(146, 86, 220, 0.15);
 }
 .process__step:hover .process__icon {
-  color: #9356DC;
+  color: #9356dc;
 }
 .process__number {
-  background-color: #9356DC;
+  background-color: #9356dc;
   color: white;
   position: absolute;
   padding: 3px 8px 3px 8px;
@@ -196,7 +196,7 @@ body {
   transform: translateX(-50%);
 }
 .process__icon {
-  color: #7E7E7E;
+  color: #7e7e7e;
   margin: 0 20px;
 }
 .process__steps {
@@ -208,7 +208,6 @@ body {
 .restaurants {
   margin: 0;
   background: #f6f6f6;
-  padding: 20px;
   max-width: 1200px;
   display: flex;
   justify-content: center;
@@ -253,7 +252,7 @@ body {
 }
 .restaurant__card:hover {
   transition: 0.5s;
-  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356DC, 3px 3px 15px 0px #9356DC, 3px 3px 20px 0px #9356DC;
+  box-shadow: 3px 3px 5px 0px rgb(0, 0, 0), 3px 3px 10px 0px #9356dc, 3px 3px 15px 0px #9356dc, 3px 3px 20px 0px #9356dc;
 }
 .restaurant__card:hover img {
   transform: scale(1.2);
@@ -328,7 +327,7 @@ body {
 }
 
 .restaurant__card:hover .restaurant__block-name {
-  color: #9356DC;
+  color: #9356dc;
 }
 
 .footer {
@@ -367,18 +366,18 @@ body {
   cursor: pointer;
 }
 .footer__bloc-link:hover .footer__bloc-link__title {
-  color: #9356DC;
+  color: #9356dc;
   transform: translateX(10px);
 }
 .footer__bloc-link:hover .footer__bloc-link__title a {
-  color: #9356DC;
+  color: #9356dc;
 }
 .footer__bloc-link i {
   margin-right: 10px;
   transition: 0.5s;
 }
 .footer__bloc-link:hover i {
-  color: #9356DC;
+  color: #9356dc;
   -webkit-animation: bounce-in-bck 1s linear;
           animation: bounce-in-bck 1s linear;
   transform: scale(1);
@@ -657,18 +656,15 @@ body {
     grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
   }
-
   .process__step {
     width: 100%;
   }
-
   .process__steps {
     display: flex;
     justify-content: center;
     flex-direction: row;
     width: 100%;
   }
-
   .footer__bloc {
     margin-bottom: 15px;
     display: flex;
