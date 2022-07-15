@@ -223,8 +223,7 @@ body {
 // Restaurants //
 .restaurants {
     margin: 0;
-    background: #f6f6f6;
-    padding: 20px;
+    background: #f6f6f6;  
     max-width: 1200px;
     @include flexbox-center;
     flex-direction: column;
