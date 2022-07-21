@@ -461,7 +461,7 @@ body {
 }
 @-webkit-keyframes heartbeat {
   from {
-    transform: scale(1);
+    -webkit-transform: scale(1);
     transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
