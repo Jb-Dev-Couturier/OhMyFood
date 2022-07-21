@@ -321,6 +321,11 @@ header .header__logo a {
           animation-delay: 0.9s;
 }
 
+#case-10 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
 .footer {
   width: 100%;
   background-color: #353535;
